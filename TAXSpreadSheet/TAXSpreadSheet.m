@@ -57,6 +57,7 @@ const CGFloat defaultSpacing = 0.0;
     self.interRowSpacing = defaultSpacing;
     self.backgroundColor = [UIColor clearColor];
     self.bounces = YES;
+    self.translatesAutoresizingMaskIntoConstraints = false;
 
     UICollectionView *collectionView = [[UICollectionView alloc] initWithFrame:self.bounds collectionViewLayout:layout];
     collectionView.dataSource = self;
